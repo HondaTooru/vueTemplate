@@ -42,13 +42,15 @@ import Breadcrumb from '@/components/Breadcrumb'
 import Hamburger from '@/components/Hamburger'
 import Screenfull from '@/components/Screenfull'
 import LangSelect from '@/components/LangSelect'
+import Notice from '@/components/notice'
 
 export default {
   components: {
     Breadcrumb,
     Hamburger,
     Screenfull,
-    LangSelect
+    LangSelect,
+    Notice
   },
   computed: {
     ...mapGetters([

@@ -1,6 +1,17 @@
 export default {
   route: {
-    dashboard: 'Dashboard'
+    dashboard: 'Dashboard',
+    clue: 'Clue',
+    customer: 'Customer',
+    seas: 'Public Seas',
+    contact: 'Contact',
+    business: 'Business Oppt',
+    contract: 'Contract',
+    product: 'Product',
+    receivable: 'Receivable Records',
+    contractlist: 'Contract List',
+    report: 'Report Center',
+    follow: 'Follow Up'
   },
   tagsView: {
     close: 'Close',

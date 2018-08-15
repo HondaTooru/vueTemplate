@@ -32,12 +32,11 @@ export const constantRouterMap = [
     redirect: '/dashboard',
     children: [{
       path: 'dashboard',
-      component: () => import('@/views/dashboard/index'),
+      component: () => import('@/views/dashboard'),
       name: 'dashboard',
       meta: { title: 'dashboard', icon: 'dashboard', noCache: true }
     }]
-  },
-  { path: '*', redirect: '/404', hidden: true }
+  }
 ]
 
 export default new Router({
@@ -47,4 +46,82 @@ export default new Router({
 })
 
 export const asyncRouterMap = [
+  {
+    path: '/clue',
+    component: Layout,
+    children: [
+      { path: 'index', component: () => import('@/views/clue/index'), name: 'clue', meta: { title: 'clue', icon: 'clue' }}
+    ]
+  },
+  {
+    path: '/customer',
+    component: Layout,
+    children: [
+      { path: 'index', component: () => import('@/views/customer'), name: 'customer', meta: { title: 'customer', icon: 'customer' }}
+    ]
+  },
+  {
+    path: '/seas',
+    component: Layout,
+    children: [
+      { path: 'index', component: () => import('@/views/seas'), name: 'seas', meta: { title: 'seas', icon: 'seas' }}
+    ]
+  },
+  {
+    path: '/business',
+    component: Layout,
+    children: [
+      { path: 'index', component: () => import('@/views/business'), name: 'business', meta: { title: 'business', icon: 'business' }}
+    ]
+  },
+  {
+    path: '/product',
+    component: Layout,
+    children: [
+      { path: 'index', component: () => import('@/views/product'), name: 'product', meta: { title: 'product', icon: 'product' }}
+    ]
+  },
+  {
+    path: '/contract',
+    component: Layout,
+    children: [
+      { path: 'index', component: () => import('@/views/contract'), name: 'contract', meta: { title: 'contract', icon: 'contract' }}
+    ]
+  },
+  {
+    path: '/contact',
+    component: Layout,
+    children: [
+      { path: 'index', component: () => import('@/views/contact'), name: 'contact', meta: { title: 'contact', icon: 'contact' }}
+    ]
+  },
+  {
+    path: '/receivable',
+    component: Layout,
+    children: [
+      { path: 'index', component: () => import('@/views/receivable'), name: 'receivable', meta: { title: 'receivable', icon: 'receivable' }}
+    ]
+  },
+  {
+    path: '/contractlist',
+    component: Layout,
+    children: [
+      { path: 'index', component: () => import('@/views/contractlist'), name: 'contractlist', meta: { title: 'contractlist', icon: 'contractlist' }}
+    ]
+  },
+  {
+    path: '/report',
+    component: Layout,
+    children: [
+      { path: 'index', component: () => import('@/views/report'), name: 'report', meta: { title: 'report', icon: 'report' }}
+    ]
+  },
+  {
+    path: '/follow',
+    component: Layout,
+    children: [
+      { path: 'index', component: () => import('@/views/follow'), name: 'follow', meta: { title: 'follow', icon: 'follow' }}
+    ]
+  },
+  { path: '*', redirect: '/404', hidden: true }
 ]

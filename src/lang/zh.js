@@ -1,6 +1,17 @@
 export default {
   route: {
-    dashboard: '首页'
+    dashboard: '首页',
+    clue: '线索',
+    customer: '客户',
+    seas: '公海',
+    contact: '联系人',
+    business: '商机',
+    contract: '合同',
+    product: '产品',
+    receivable: '回款记录',
+    contractlist: '合同清单',
+    report: '报表中心',
+    follow: '跟进记录'
   },
   tagsView: {
     close: '关闭当前标签',
